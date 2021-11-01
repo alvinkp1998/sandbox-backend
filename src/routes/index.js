@@ -6,8 +6,8 @@ const transactionRoutes = require("../controllers/transactions/routes");
 const typeBookRoutes = require("../controllers/typeBooks/routes");
 
 router.use("/user", userRoutes);
-router.use("/book", bookRoutes);
 router.use("/transaction", transactionRoutes);
+router.use("/book", bookRoutes);
 router.use("/book/type", typeBookRoutes);
 
 module.exports = router;

@@ -21,6 +21,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       userId: DataTypes.INTEGER(11),
       bookId: DataTypes.INTEGER(11),
+      orderAt: DataTypes.DATEONLY,
       qty: DataTypes.INTEGER(11),
     },
     {
