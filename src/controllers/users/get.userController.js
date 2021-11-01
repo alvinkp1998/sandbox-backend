@@ -16,7 +16,7 @@ const service = async function (req, res, next) {
       if (requestDB.length < 1) {
         return res.status(404).json({ msg: "Tidak ada user yang ditemukan" });
       } else {
-        return res.json(requestDB);
+        return res.json(requestDB[0]);
       }
     }
   } catch (error) {

@@ -6,8 +6,8 @@ const getBook = require("./get.bookController");
 const updateBook = require("./update.bookController");
 const deleteBook = require("./delete.bookController");
 
-router.get("/", getBook.service);
 router.get("/:id", getBook.service);
+router.get("/", getBook.service);
 router.post("/", createBook.service);
 router.put("/:id", updateBook.service);
 router.delete("/:id", deleteBook.service);
