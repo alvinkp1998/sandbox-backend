@@ -13,7 +13,11 @@ module.exports = (sequelize, DataTypes) => {
   }
   Type_books.init(
     {
-      id: { type: DataTypes.INTEGER(11), primaryKey: true },
+      id: {
+        type: DataTypes.INTEGER(11),
+        autoIncrement: true,
+        primaryKey: true,
+      },
       name: DataTypes.STRING,
     },
     {
